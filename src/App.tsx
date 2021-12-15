@@ -1,24 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+const name = 'hello';
+
+let nameChaneg = 'hello';
+nameChaneg = 'hello';
+
+let username = 'manbow';
+let dummyNum = 10;
+let dummyBool = true;
+let dummyArryBool = [true, false];
+let dummyArryNum = [10, 20, 30];
+let dummyArryString = ['ストリング', '愛うえろ', 0, true];
+interface NAME {
+  first: string;
+  last?: string;
+}
+
+let name1: NAME = {first: "てしt", "last": "あ"}
+let name2: NAME = {first: "てしt"}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <header className='App-header'></header>
     </div>
   );
 }
