@@ -35,13 +35,16 @@ type LOGIN = {
   password: string;
 };
 
-type USER = PROFILE & LOGIN;
+type USER = PROFILE & LOGIN
 
 const userA: USER = {
   age: 26,
-  username: 'マンボウ',
-  password: 'xxx',
-};
+  city: "テスト",
+  username: "マンボウ",
+  password: "xxx"
+}
+
+// console.log(userA)
 
 function App() {
   return (
