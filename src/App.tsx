@@ -17,8 +17,31 @@ interface NAME {
   last?: string;
 }
 
-let name1: NAME = {first: "てしt", "last": "あ"}
-let name2: NAME = {first: "てしt"}
+let name1: NAME = { first: 'てしt', last: 'あ' };
+let name2: NAME = { first: 'てしt' };
+
+const func1 = (num1: number, num2: number): number => {
+  return num1 + num2;
+};
+
+//Intersection Types
+type PROFILE = {
+  age: number;
+  city: string;
+};
+
+type LOGIN = {
+  username: string;
+  password: string;
+};
+
+type USER = PROFILE & LOGIN;
+
+const userA: USER = {
+  age: 26,
+  username: 'マンボウ',
+  password: 'xxx',
+};
 
 function App() {
   return (
