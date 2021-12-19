@@ -51,9 +51,15 @@ value = 10;
 // value = true;  // NG
 
 let arrayUni: (number | string)[];
-arrayUni = [0, 'ストリング', ];
+arrayUni = [0, 'ストリング'];
 // arrayUni = [0, 'ストリング', true]; // NG
 
+// Literal Types (Union Types and Litera)
+let company: 'Facebook' | 'Google' | 'Amazon';
+company = 'Amazon';
+
+let memory: 256 | 512;
+memory = 256;
 
 function App() {
   return (
