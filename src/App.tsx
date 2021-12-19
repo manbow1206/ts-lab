@@ -62,6 +62,7 @@ let memory: 256 | 512;
 memory = 256;
 
 // typeof
+// JSONオブジェクトの複雑な構造と型をしていて、それらを一気に型推論してくれる
 let message: string = 'Hi!';
 let message1: typeof message;
 message1 = 'string';
@@ -69,6 +70,23 @@ message1 = 'string';
 
 let animal = { cat: 'small cat' };
 let newAnumal: typeof animal = { cat: 'big cat' };
+
+// keyof
+type KEYS = {
+  primary: string;
+  secondary: string;
+};
+let key: keyof KEYS;
+
+const SPORTS = {
+  soccer: 'Soccer',
+  baseball: 'Baseboll',
+};
+
+let keySports: keyof typeof SPORTS;
+keySports = 'soccer';
+keySports = 'baseball';
+// keySports = 'basketball'; // NG
 
 function App() {
   return (
