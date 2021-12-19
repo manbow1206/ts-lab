@@ -35,16 +35,25 @@ type LOGIN = {
   password: string;
 };
 
-type USER = PROFILE & LOGIN
+type USER = PROFILE & LOGIN;
 
 const userA: USER = {
   age: 26,
-  city: "テスト",
-  username: "マンボウ",
-  password: "xxx"
-}
-
+  city: 'テスト',
+  username: 'マンボウ',
+  password: 'xxx',
+};
 // console.log(userA)
+
+// Union Types
+let value: string | number;
+value = 10;
+// value = true;  // NG
+
+let arrayUni: (number | string)[];
+arrayUni = [0, 'ストリング', ];
+// arrayUni = [0, 'ストリング', true]; // NG
+
 
 function App() {
   return (
