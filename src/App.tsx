@@ -88,6 +88,26 @@ keySports = 'soccer';
 keySports = 'baseball';
 // keySports = 'basketball'; // NG
 
+// enum
+enum OS {
+  Windows,
+  Mac,
+  Linux,
+}
+interface PC {
+  id: number;
+  OSType: OS;
+}
+const PC1: PC = {
+  id: 1,
+  OSType: OS.Mac,
+};
+
+const PC2: PC = {
+  id: 2,
+  OSType: OS.Linux,
+};
+
 function App() {
   return (
     <div className='App'>
